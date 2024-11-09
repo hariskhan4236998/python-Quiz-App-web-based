@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Welcome to my Computer Quiz!</h1>
+        <p>Press "Start Quiz" to begin</p>
+
+        <div id="question-container">
+            <p id="question">Your question will appear here</p>
+            <input type="text" id="answer-input" placeholder="Your answer here">
+            <button id="submit-btn" onclick="submitAnswer()">Submit</button>
+        </div>
+
+        <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
